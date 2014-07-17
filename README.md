@@ -13,12 +13,30 @@ windows自带的朗读TTS默认不支持中文，下载的中文朗读引擎文�
 - 联网
 - 在Windows8.1 x64测试正常
 
+### 安装方法
+---
+
+####vundle
+在配置中添加
+```
+Plugin 'yantze/vim-tts'
+```
+即可。
+
+####手动安装
+解压[下载的文档](https://github.com/yantze/vim-tts/archive/master.zip),把vim-tts目录放到plugin目录下即可。
+
+
 ### 使用方法
+```
 :TTS
+```
 
-如果文件是GBK编码的
+如果要朗读的文件是GBK编码的，执行
 
+```
 :TTSGBK
+```
 
 ### 自定义参数
 修改tts_jar.vim文件，里面的参数说明
@@ -28,6 +46,7 @@ windows自带的朗读TTS默认不支持中文，下载的中文朗读引擎文�
 - -w 朗读者角色选择(插件目录下面有一张人物发音列表的图片
 - -v 朗读声音
 - -s 朗读速度
+- -h 显示帮助
 
 
 ### 朗读的外置接口
