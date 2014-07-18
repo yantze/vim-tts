@@ -2,15 +2,18 @@
 " mail : yantze@126.com
 "
 func! TTS()
-    let path=globpath(&rtp, 'tts.bat')
+    " let path=globpath(&rtp, 'tts.bat')
+    let path=globpath(&rtp, 'plugin\tts\tts.bat')
     exe "! ".expand(path)." -p "."%:p"
 endfunction
 func! TTSGBK()
-    let path=globpath(&rtp, 'tts.bat')
+    " let path=globpath(&rtp, 'tts.bat')
+    let path=globpath(&rtp, 'plugin\tts\tts.bat')
     exe "! ".expand(path)." -c cp936 -p "."%:p"
 endfunction
 func! MSTTS()
-    let path=globpath(&rtp, 'tts.vbs')
+    " let path=globpath(&rtp, 'tts.vbs')
+    let path=globpath(&rtp, 'plugin\tts\tts.vbs')
     exe "! ".expand(path)." %:p"
 endfunction
 command! -nargs=0 TTS call TTS()

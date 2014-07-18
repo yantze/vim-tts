@@ -1,4 +1,4 @@
-##VIM中文发音插件 v0.1
+##VIM中文发音插件 v0.2
 ---
 
 ### 简介
@@ -6,12 +6,18 @@
 
 windows自带的朗读TTS默认不支持中文，下载的中文朗读引擎文件中小的朗读有问题，好的文件又太大了。
 
+之前正好用vbs也做了一个利用windows自带的tts语音处理文件，都一并整合到里面去了，如果要朗读中文，需要安装中文朗读引擎。
+
 正好很久之前就想把讯飞语音的接口拿来自己做一个java的朗读接口，今天终于花了几个小时完成了最初的版本。
 
 ### require
+
+#####jar方式朗读
 - java jre 1.5+
 - 联网
-- 在Windows8.1 x64测试正常
+
+#####vbs方式朗读
+- 需要下载中文朗读引擎，否则只能读英文
 
 ### 安装方法
 
@@ -20,11 +26,14 @@ windows自带的朗读TTS默认不支持中文，下载的中文朗读引擎文�
 ```
 Plugin 'yantze/vim-tts'
 ```
+重新打开一次vim，执行
+```
+PluginInstall
+```
 即可。
 
 ####手动安装
 解压[下载的文档](https://github.com/yantze/vim-tts/archive/master.zip),把vim-tts目录放到plugin目录下即可。
-
 
 ### 使用方法
 ```
@@ -36,6 +45,14 @@ Plugin 'yantze/vim-tts'
 ```
 :TTSGBK
 ```
+
+如果要用windows自带的tts朗读，执行
+
+```
+:MSTTS
+```
+
+在Windows8.1 x64测试正常
 
 ###注意事项
 
