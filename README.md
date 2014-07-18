@@ -80,3 +80,9 @@ inoremap <silent><leader>gr <Esc>:TTS<cr>
 ### 朗读的外置接口
 如果想在vim之外也使用这个插件，
 详细的参数和使用方法请参照tts.bat里面的用法
+
+tip:
+
+给tts.bat创建快捷方式，将文件放到：SystemDrive:\Users\YourUserName\AppData\Roaming\Microsoft\Windows\SendTo中
+
+下次想要读中文，就可以直接右键单击要读的文件，选择发送到，tts.bat就可以自动发音了。
