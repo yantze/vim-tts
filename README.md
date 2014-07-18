@@ -52,6 +52,14 @@ PluginInstall
 :MSTTS
 ```
 
+给vim-tts添加快捷按钮
+```viml
+noremap <silent><leader>gr :TTS<cr>
+inoremap <silent><leader>gr <Esc>:TTS<cr>
+```
+其中<silent>是让程序在退出后，不用再确认；
+<leader>是一个功能键，默认是'\'反斜杠。
+
 在Windows8.1 x64测试正常
 
 ###注意事项
