@@ -7,4 +7,5 @@ cd %~dp0
 REM 添加环境变量
 SET PATH=%~dp0;%PATH%
 REM % 1 是第一个参数
-java -jar tts.jar %1 %2 %3 %4 %5 %6 %7 %8 %9
+start java -jar tts.jar %1 %2 %3 %4 %5 %6 %7 %8 %9
+exit
